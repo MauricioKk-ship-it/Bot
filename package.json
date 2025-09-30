@@ -1,13 +1,16 @@
 {
   "name": "dragon-ai-bot",
   "version": "1.0.0",
-  "description": "IA personnelle avec DuckDuckGo + Gemini",
+  "description": "IA personnelle avec Google Gemini",
+  "type": "module",
   "bin": {
     "bot": "./bin/bot.js"
   },
-  "type": "module",
+  "scripts": {
+    "start": "node ./bin/bot.js"
+  },
   "dependencies": {
-    "@google/generative-ai": "^0.8.0",
     "readline-sync": "^1.4.10",
+    "@google/generative-ai": "^0.8.0"
   }
 }
